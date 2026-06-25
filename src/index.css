@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
+
+:root {
+  --primary-color: #d4af37;
+  --bg-color: #faf9f6;
+  --text-dark: #1a1a1a;
+  --text-light: #555555;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-dark);
+}
+
+h1, h2, h3, h4, h5, h6, .brand-font {
+  font-family: 'Playfair Display', serif;
+}
+
+.text-accent {
+  color: var(--primary-color);
+}
+
+/* Custom Buttons */
+.btn-custom {
+  background-color: var(--text-dark);
+  color: white;
+  border: none;
+  padding: 12px 32px;
+  border-radius: 0;
+  font-weight: 400;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* Hero Section */
+.hero-section {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(rgba(250, 249, 246, 0.85), rgba(250, 249, 246, 0.85)), url('https://images.unsplash.com/photo-1599908129037-12b2eafdb5ce?auto=format&fit=crop&w=1920&q=80') center/cover;
+}
+
+/* Menu Cards */
+.menu-card {
+  border: none;
+  background: transparent;
+  transition: transform 0.4s ease;
+}
+
+.menu-card:hover {
+  transform: translateY(-8px);
+}
+
+.menu-img-container {
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.menu-img-container img {
+  transition: transform 0.6s ease;
+}
+
+.menu-card:hover .menu-img-container img {
+  transform: scale(1.05);
+}
+
+.menu-price {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+/* Navbar */
+.navbar-custom {
+  background-color: var(--bg-color) !important;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+}
+
+.nav-link {
+  color: var(--text-dark) !important;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+.nav-link:hover {
+  color: var(--primary-color) !important;
+}
+
+/* Footer */
+.footer-custom {
+  background-color: var(--text-dark);
+  color: var(--bg-color);
+}

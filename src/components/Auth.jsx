@@ -162,7 +162,7 @@ const Auth = ({ onLogin }) => {
               </form>
 
               <p className="small text-muted mt-4 text-center">
-                Consejo: prueba con <strong>admin@amaru.pe</strong> / <strong>admin123</strong>.
+                prueba <strong>admin@amaru.pe</strong> / <strong>admin123</strong>.
               </p>
             </div>
           </div>
